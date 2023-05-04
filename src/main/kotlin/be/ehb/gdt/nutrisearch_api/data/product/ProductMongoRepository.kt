@@ -8,6 +8,7 @@ import org.springframework.data.mongodb.core.query.Update
 import org.springframework.stereotype.Repository
 
 @Repository
+@SuppressWarnings("kotlin:S6518")
 class ProductMongoRepository(private val mongoTemplate: MongoTemplate) : ProductRepository {
     private val query get() = Query(Criteria.where("isDeleted").`is`(false))
 

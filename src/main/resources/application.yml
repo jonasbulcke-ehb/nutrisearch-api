@@ -1,0 +1,16 @@
+spring:
+  security:
+    oauth2:
+      resourceserver:
+        jwt:
+          jwk-set-uri: "https://www.googleapis.com/service_accounts/v1/jwk/securetoken%40system.gserviceaccount.com"
+  data:
+    mongodb:
+      uri: "mongodb+srv://spring-boot:B4OTfcEisNGHBebQ@cluster0.zztf6.mongodb.net/?retryWrites=true&w=majority"
+      database: "nutrisearch"
+      auto-index-creation: true
+google-application-credentials:
+  path: "/Users/jonas/Documents/BATI/2022_2023/Final_Work/projects/nutrisearch-5321f-firebase-adminsdk-1hbav-6e54c9049b.json"
+#      host: "cluster0.zztf6.mongodb.net"
+#      password: "B4OTfcEisNGHBebQ"
+#      username: "spring-boot"

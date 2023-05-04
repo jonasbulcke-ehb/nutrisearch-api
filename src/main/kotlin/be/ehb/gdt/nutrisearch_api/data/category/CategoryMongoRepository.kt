@@ -9,6 +9,7 @@ import org.springframework.data.mongodb.core.query.Update
 import org.springframework.stereotype.Repository
 
 @Repository
+@SuppressWarnings("kotlin:S6518")
 class CategoryMongoRepository(val mongoTemplate: MongoTemplate) : CategoryRepository {
     override fun findAllCategories(): List<Category> = mongoTemplate.findAll(Category::class.java)
 

@@ -10,6 +10,7 @@ import org.junit.jupiter.api.Assertions.*
 import org.junit.jupiter.api.BeforeEach
 import org.junit.jupiter.api.Test
 import org.junit.jupiter.api.extension.ExtendWith
+import org.junit.jupiter.api.fail
 import org.mockito.Mock
 import org.mockito.Mockito.verify
 import org.mockito.Mockito.`when`
@@ -42,6 +43,7 @@ class CategoryServiceImplTest {
         val subcategories = service.getCategories()
         assertEquals(2, subcategories.size)
         verify(repo).findAllCategories()
+        fail("Test")
     }
 
     @Test

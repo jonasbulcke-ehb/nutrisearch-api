@@ -43,7 +43,6 @@ class CategoryServiceImplTest {
         val subcategories = service.getCategories()
         assertEquals(2, subcategories.size)
         verify(repo).findAllCategories()
-        fail("Test")
     }
 
     @Test
